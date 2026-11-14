@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Demand Paging with Swap and Page Replacement
 
 **PageFlow** is an educational virtual-memory simulator for an Operating Systems project. A C++17 engine processes page references and applies FIFO, LRU, or Optimal replacement. A browser dashboard visualizes the engine's results, including page faults, page-table changes, and movement between RAM and simulated swap.
@@ -142,3 +143,7 @@ For **3 frames** and reference string **`1 2 3 4 1 2 5 1 2 3 4 5`**:
 | Optimal | 12 | 5 | 7 | 41.67% | 58.33% |
 
 The rates and comparison chart are calculated from simulation results, not hardcoded into the program. Additional edge cases are listed in `tests/test_cases.txt`.
+=======
+# OS-project
+my IIITA OS on Demand Paging with Swap and Page Replacement work is here
+>>>>>>> f0ef970515e7e5cdfce75be67966ce11a40ed8ec

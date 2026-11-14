@@ -1,0 +1,24 @@
+Assignment reference string
+  Frames: 3
+  References: 1 2 3 4 1 2 5 1 2 3 4 5
+  FIFO: 9 faults, 3 hits
+  LRU: 10 faults, 2 hits
+  Optimal: 7 faults, 5 hits
+
+Repeated page references
+  Frames: 1
+  References: 4 4 4
+  Expected: 1 fault, 2 hits, no swaps
+
+Swap-in reuses the incoming page's freed slot
+  Frames: 2; swap slots: 1
+  References: 1 2 3 1
+  Expected: complete; 1 swap-in, 2 swap-outs
+
+Out-of-swap handling
+  Frames: 1; swap slots: 1
+  References: 1 2 3
+  Expected: first two requests load; third faults but cannot evict; RAM and swap remain consistent
+
+Empty reference list
+  Expected: 0 requests, 0 hits, 0 faults, 0% hit and fault rates
